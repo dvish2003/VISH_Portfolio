@@ -14,16 +14,17 @@
 
 
     <link rel="stylesheet" href="../file/normalize.css">
-    <link rel="stylesheet" href="../css/Style(Section1).css">
+
+    <link rel="stylesheet" href="../css/Style.css">
+
+
+
     <!--box_icons link-->
     <link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
     <!--remix_icon link-->
-    <link
-            href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-            rel="stylesheet"
-    />
-
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!--pop font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,58 +32,109 @@
 
 
 </head>
+<link href="/Asset/style/fontawesome-free-6.6.0-web/css/all.min.css">
 <body>
-<section id="S1-HomePage">
-    <!--Header Section-->
+<!--home-->
+<section class="S1-HomePage">
+    <!--Navigation List-->
     <header class="header">
-        <!--Logo Section-->
         <div>
             <h1 class="HeaderName">VISH</h1>
         </div>
-
-        <!--Navigation Section-->
         <nav>
             <ul class="nav_list">
                 <li><a href="">Home</a></li>
                 <li><a href="#S7-Service">Services</a></li>
                 <li><a href="#S2-About-Me">About</a></li>
                 <li><a href="">Project</a></li>
-                <li><a href="">Work</a></li>
                 <li><a href="">Connected</a></li>
             </ul>
         </nav>
 
         <div class="bx bx-menu" id="menu-icon"></div>
-
-
+        <button class="Visit_gitHub">Visit GitHub</button>
     </header>
 
-    <!--  Hero Section-->
-    <main>
-        <!--welcome Section-->
-        <section class="st_page">
-            <div  class="hero-text">
-                <h1 id="Hello-Word">Hello it's me</h1>
-                <h1 id="My-name">D Vishan Chathuranga </h1>
-                <h2 id="i-am-Developer">And I am passionate <span id="developer">Software Developer</span> & <span
-                        id="developer2">Web Developer</span></h2>
-                <a href="#" class="CV">Download CV</a>
+ <section id="about" class="about">
+     <div class="about-container">
+<div  class="container">
+<div class="hero-pic">
+    <img class="hero-img" src="/Asset/Image/new.jpeg" alt="" >
+</div>
+</div>
+         <!--
+         <img class="hero-img" src="/Asset/Image/V6.png" alt="" >width="500" height="650"
+-->
+         <div class="info-box">
+             <div class="text">
+                 <h1 id="Hello-Word">Hello it's me</h1>
+                 <h1 id="My-name">Vishan Chathuranga </h1>
+                 <h2 id="i-am-Developer"><span id="developer">Software Developer</span> & <span
+                         id="developer2">Web Developer</span></h2>
+             </div>
 
-            </div>
+             <div class="btn-group">
+                 <a href="#" class="btn">Download CV</a>
+                 <a href="#" class="btn">Contact me</a>
+             </div>
+         </div>
+     </div>
+ </section>
+</section>
 
-            <div>
-                <img class="hero-img" src="/Asset/Image/MKQSE7497.JPG" width="500" height="650" style="border-radius: 90px">
+<section id="Service" class="Service">
+    <h2 class="section_title">Struggling to Manage Your Vision?<br>
+    <strong>Services offering by me.</strong></h2>
+<div class="Service_info">
+    <div class="grid">
+        <div class="grid_card">
+            <div class="bx bx-laptop"></div>
+            <span>Software Development</span>
+            <p>
+                As a committed software developer, I provide end-to-end software development services customized to
+                address the specific requirements of my clients. My skills encompass the design, development, and
+                maintenance of top-tier software applications that propel business growth and success.
+            </p>
 
-            </div>
-        </section>
-
-        <div class="Scroll-down">
-            <a href="#"><i class="ri-arrow-down-s-fill"></i></a>
+            <a class="button" href="#">Read More</a>
         </div>
 
-    </main>
+        <div class="grid_card">
+            <div class="bx bx-file"></div>
+            <span>Specialized Services</span>
+            <p>
+                As a committed software developer, I provide end-to-end software development services customized to
+                address the specific requirements of my clients. My skills encompass the design, development, and
+                maintenance of top-tier software applications that propel business growth and success.
+            </p>
+
+            <a class="button" href="#">Read More</a>
+        </div>
+        <div class="grid_card">
+        <div class="bx bx-code"></div>
+            <span> Project-Based Services</span>
+            <p>
+                Need a custom software solution? Our project-based services deliver high-end, tailored applications designed to transform your business. Avoid generic solutions that waste time and resources—let us create the perfect software to meet your unique needs.
+            </p>
+
+            <a class="button" href="#">Read More</a>
+        </div>
+        <div class="grid_card">
+        <div class="bx bx-code"></div>
+            <span> Project-Based Services</span>
+            <p>
+                Need a custom software solution? Our project-based services deliver high-end, tailored applications designed to transform your business. Avoid generic solutions that waste time and resources—let us create the perfect software to meet your unique needs.
+            </p>
+
+            <a class="button" href="#">Read More</a>
+        </div>
+    </div>
+    <img class="Service_image" src="../Asset/Image/MLM%20Software.jpeg">
+</div>
 
 </section>
 
+
+<script src="script.js"></script>
 </body>
 </html>

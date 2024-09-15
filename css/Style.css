@@ -28,7 +28,7 @@
   z-index: 1000;
 }
 .HeaderName{
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   font-weight: 700;
   color: black;
   text-wrap: nowrap;
@@ -130,7 +130,7 @@
   gap: 1.5rem;
 }
 .text>#Hello-Word{
-  font-size: 2.8rem;
+  font-size: 3.3rem;
   font-weight: 500;
   color: white;
 }
@@ -172,382 +172,88 @@ font-size: 4rem;
 }
 
 
-/*
-*{
-  font-family: 'Poppins', sans-serif;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-}
-#S1-HomePage>header{
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 1000;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2px 9%;
-  background: transparent;
-  backdrop-filter: blur(1vh);
-  !*
-  box-shadow: #133917 10px 10px 10px;
-  *!
-}
-.HeaderName{
-  font-size: 30px;
-  font-weight: 700;
-  color: black;
-}
-.nav_list{
-  display: flex;
-}
-.nav_list a{
-  color: black;
-  margin-left: 60px;
-  font-size: 19px;
-  font-weight: 600;
-  border-bottom: 2px solid transparent;
-  transition: all .55s ease;
-}
-nav ul li a {
-  text-decoration: none;
-  color: black;
-  transition: color 0.3s ease;
-  position: relative;
-  padding: 0.5rem 1rem;
-}
 
-nav ul li a::after{
-  position: absolute;
-  content: "";
-  inset: 0;
+.Service{
   background: black;
-  scale: 1 0;
-  z-index: -1;
-  transition: 0.45s;
-  border-radius: 10px;
-
 }
-
-nav ul li a:hover {
+.section_title{
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 100;
+  margin-bottom: 3rem;
   color: white;
 }
-nav ul li a:hover::after{
-  scale: 1 1;
-}
-
-#menu-icon{
-  color: black;
-  font-size: 35px;
-  z-index: 10001;
-  cursor: pointer;
-  display: none;
-}
-
-.st_page{
-  height: 100px;
-  width: 100%;
-  min-height: 100vh;
-  background: floralwhite;
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  gap: 7rem;
-  padding: 0 19%;
-
-}
-
-.hero-text>#Hello-Word{
-  font-size: 7.5vh;
-  font-weight: 500;
-  color: black;
-  margin-bottom: 40px;
-  animation: fadeOutLeft ; !* referring directly to the animation's @keyframe declaration *!
-  animation-duration: 2s; !* don't forget to set a duration! *!
-}
-
-.animate__animated.animate__fadeOutLeft {
-  --animate-duration: 2s;
-}
-
-!* This changes all the animations globally *!
-:root {
-  --animate-duration: 800ms;
-  --animate-delay: 0.9s;
-}
-
-.hero-text>#My-name{
-  font-size: 4.2vh;
-  font-family: 'Poppins', sans-serif;
-  color: black;
-  font-weight: 500;
-}
-section:nth-child(1)>main>section:nth-child(1)>div:nth-child(1)>#i-am-Developer{
-  font-size: 3.2vh;
-  font-weight: 500;
-  font-family: 'Poppins', sans-serif;
-  color: black;
-
-}
-#A{
-  font-size: 7vh;
-}
-#I{
-  font-size: 7vh;
-}
-#D{
-  font-size: 7vh;
-}
-#developer{
-  color: gray;
-}
-#D2{
-  font-size: 7vh;
-}
-#developer2{
-  color: gray;
-}
-#P{
-  font-size: 7vh;
-}
-#S{
-  font-size: 7vh;
-}
-#W{
-  font-size: 7vh;
-}
-
-.st_page img{
-  width: 500px;
-  height: auto;
-  box-shadow: #272727 10px 10px 10px;
-  border-radius: 100px;
-}
-.hero-text a{
-  position: relative;
-  top: 70px;
-  display: inline-block;
-  color: white;
-  background: black;
-  border: 1px solid transparent;
-  padding: 12px 30px;
-  line-height: 1.4;
-  font-size: 14px;
-  font-weight: 500;
-  border-radius: 30px;
-  text-transform: uppercase;
-  transition: all .55s ease;
-}
-
-.hero-text a:hover{
-  background: transparent;
-  border: 1px solid black;
-  transform: translateX(8px);
-  color: black;
-}
-
-
-.Scroll-down{
-  position: absolute;
-  bottom: 6%;
-  right: 9%;
-}
-
-.Scroll-down i{
-  display: inline-flex;
+.Service_info{
+  display: flex;
   align-items: center;
   justify-content: center;
-  height: 80px;
-  width: 80px;
+  gap: 5rem;
+}
+
+.Service_image{
+  width: 35vw;
+  border-radius: 3rem;
+  box-shadow: 5px 7px 25px #272727;
+
+
+}
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.grid_card{
+  width: 500px;
+  border: 2px solid #272727;
+  background: black;
   color: white;
-  background: #555555;
-  border-radius: 50%;
-  border: 1px solid transparent;
-  font-size: 39px;
-  transition: all .7s ease;
-
-  animation-name: slide;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
+  border-radius: 3rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: left;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
 }
 
-@keyframes slide {
-0%{
-  transform: translateY(-5px);
-}
-  50%{
-    transform: translateY(10px);
-  }
-  100%{
-    transform: translateY(-5px);
-  }
-}
-.Scroll-down i:hover{
-  background: transparent;
-  border: 1px solid #133917;
+.grid_card:hover{
+  transform: scale(1.02);
+  background: white;
+  color: black;
 }
 
-@media all and (max-width: 1535px) {
-  header {
-    padding: 1px 3%;
-    transition: .2s;
-  }
-  .Scroll-down {
-    right: 3%;
-    transition: .2s;
-  }
+.grid_card>div{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-@media all and (max-width: 1460px) {
-  .st_page {
-    padding: 0 12%;
-    transition: .2s;
-  }
+.grid_card span{
+  font-size: 1.8rem;
+  font-weight: 500;
+  background: linear-gradient(to right,rgb(0,157,255),rgb(255,0,255));
+  background-clip: text;
+  color: transparent;
 }
 
-@media all and (max-width: 1340px) {
-  .st_page img {
-    width: 500px;
-    height: auto;
-  }
-  .hero-text>#Hello-Word {
-    font-size: 65px;
-    margin: 0 0 30px;
-  }
+.button{
+  border-radius: 3rem;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid white;
+  color: white;
+  background: black;
+  cursor: pointer;
+  font-weight: 500;
+  text-wrap: nowrap;
+  transition: 0.2s ease-in-out;
+  position: relative;
+  bottom: -15px;
 }
 
-@media all and (max-width: 1195px) {
-  .st_page {
-    padding: 0 3%;
-    transition: .2s;
-    height: 100%;
-    gap: 7rem;
-    grid-template-columns: 1fr;
-  }
-  .hero-text {
-    padding-top: 115px;
-  }
-  .hero-img {
-    width: 460px;
-    height: auto;
-  }
+.button:hover{
+  box-shadow: 0 0 30px #272727;
+  background-color: white;
+  color: black;
 }
 
-@media all and (max-width: 990px) {
-  #menu-icon {
-    display: block;
-  }
-  .nav_list {
-    position: absolute;
-    top: 100%;
-    right: -100%;
-    width: 300px;
-    height: 40vh;
-    background: #4d9559;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 50px 20px;
-    transition: all .55s ease;
-  }
-  .nav_list a {
-    display: block;
-    margin-left: 0;
-    margin: 5px 0;
-  }
-  .nav_list.open {
-    right: 0;
-  }
-}
-
-@media all and (max-width: 680px) {
-  .st_page img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-@media all and (max-width: 425px) {
-  .st_page{
-    height: auto;
-    width: 100%;
-  }
-    .hero-text a{
-    font-size: 14px;
-    padding: 12px 28px;
-  }
-  .hero-text>#Hello-Word {
-    font-size: 48px;
-    margin: 0 0 20px;
-  }
-  .hero-img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-@media all and (max-width: 375px) {
-  main>section>.hero-text>#Hello-Word{
-    font-size: 46px;
-  }
-  .hero-text a{
-    font-size: 12px;
-    padding: 12px 24px;
-  }
-  .nav_list {
-    width: 280px;
-    padding: 40px 15px;
-  }
-  .nav_list a {
-    font-size: 16px;
-  }
-}
-
-@media all and (max-width: 320px) {
-  main>section>.hero-text>#Hello-Word{
-    font-size: 42px;
-  }
-    .hero-text a{
-    font-size: 11px;
-    padding: 12px 21px;
-  }
-  #Hello-Word{
-    font-size: 36px;
-    margin: 0 0 15px;
-  }
-  .nav_list {
-    width: 260px;
-    padding: 30px 10px;
-  }
-}
-
-@media all and (max-width: 768px) {
-  .hero-img {
-    width: 400px;
-  }
-  .hero-text>#Hello-Word {
-    font-size: 55px;
-    margin-bottom: 25px;
-  }
-}
-
-@media all and (max-width: 1024px) {
-  .st_page {
-    padding: 0 8%;
-  }
-  .hero-img {
-    width: 450px;
-  }
-}
-
-@media all and (max-width: 1440px) {
-  .st_page {
-    padding: 0 10%;
-
-  }
-}*/
