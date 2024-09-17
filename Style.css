@@ -12,8 +12,9 @@
   background: black;
 }
 .S1-HomePage>header{
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(10px); /* Blur effect */
+  /*background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px); !* Blur effect *!*/
+  background: white;
   position: fixed;
   top: 1rem;
   left: 50%;
@@ -30,7 +31,7 @@
 .HeaderName{
   font-size: 1.6rem;
   font-weight: 700;
-  color: white;
+  color: black;
   text-wrap: nowrap;
   transition: 0.3s ease-in-out;
 }
@@ -43,7 +44,7 @@
   gap: 2rem;
 }
 li>a{
-  color: white;
+  color: black;
   position: relative;
   font-weight: 400;
 }
