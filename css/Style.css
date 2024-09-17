@@ -365,7 +365,6 @@ font-size: 24px;
 
 
 
-
 .contact{
   background: black;
 }
@@ -376,6 +375,10 @@ font-size: 24px;
   justify-content: center;
   text-align: center;
   gap: 2rem;
+  margin-top: 0;
+}
+
+.contact h2{
   margin-top: 5rem;
 }
 
@@ -499,6 +502,7 @@ header{
 
 }
 @media all and (max-width: 600px){
+
 header>#menu-icon{
   display:block;
 }
@@ -547,6 +551,10 @@ header>#menu-icon{
   footer ul{
     gap: 1rem;
   }
+  .section_title{
+    font-size: 30px;
+  }
+
 }
 
 
