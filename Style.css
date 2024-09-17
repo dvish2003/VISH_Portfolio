@@ -81,7 +81,7 @@ li>a:hover::before{
 #menu-icon{
   font-size: 2rem;
   display: none;
-  color: white;
+  color: black;
 }
 .S1-HomePage{
   min-height: 100vh;
@@ -543,7 +543,7 @@ header>#menu-icon{
     display: flex;
     flex-direction: column;
     text-align: center;
-    background: rgba(0,0,0,0.9);
+    background: rgba(255,255,255,0.6);
     border-radius: 3rem;
     display: none;
   }
