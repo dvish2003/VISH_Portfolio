@@ -653,6 +653,18 @@ header>#menu-icon{
 }
 
 @media all and (max-width: 375px) {
+  .project > div{
+    padding-left: 0;
+  }
+  .project-card {
+    width: 80%;
+  }
+  .project-card .btn-group{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media all and (max-width: 320px) {}
