@@ -12,7 +12,7 @@
   background: black;
 }
 .S1-HomePage>header{
-  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px); /* Blur effect */
   position: fixed;
   top: 1rem;
@@ -506,6 +506,9 @@ header{
 header>#menu-icon{
   display:block;
 }
+  .grid{
+    grid-template-columns: repeat(1,1fr);
+  }
 
   .nav_list{
     position: absolute;
@@ -567,13 +570,15 @@ header>#menu-icon{
     position: absolute;
     top: 100%;
     margin-top: 1rem;
+    margin-left: -160px;
     width: 100%;
     padding: 1rem;
     color: white;
     display: flex;
     flex-direction: column;
     text-align: center;
-    background: rgba(0,0,0,0.9);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
     border-radius: 3rem;
     display: none;
   }
@@ -610,7 +615,41 @@ header>#menu-icon{
 }
 
 @media all and (max-width: 425px) {
-
+  .about img{
+    width: 90%;
+    height: auto;
+  }
+  .text>#Hello-Word{
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: white;
+  }
+  .text>#My-name{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: white;
+  }
+  .text>#i-am-Developer{
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right,rgb(0,157,255),rgb(255,0,255));
+    background-clip: text;
+    color: transparent;
+  }
+  .grid{
+    grid-template-columns: repeat(1,1fr);
+    padding: 1rem;
+  }
+  .grid_card{
+    width: 100%;
+  }
+  .project > div{
+    padding-left: 0;
+  }
+    .project-card {
+  width: 90%;
+  }
 }
 
 @media all and (max-width: 375px) {
