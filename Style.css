@@ -618,7 +618,10 @@ header>#menu-icon{
 }
 
 @media all and (max-width: 425px) {
-  .about img{
+  .button{
+    font-size: 12px;
+  }
+    .about img{
     width: 90%;
     height: auto;
   }
