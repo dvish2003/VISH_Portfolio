@@ -597,6 +597,7 @@ header>#menu-icon{
     width: 100%;
     padding: 1rem;
     display: flex;
+    color: white;
     flex-direction: column;
     text-align: center;
     background: rgba(255, 255, 255, 0.90);
