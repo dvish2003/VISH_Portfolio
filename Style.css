@@ -363,6 +363,9 @@ font-size: 24px;
 
 
 
+.contact .section_title{
+  font-weight: 300;
+}
 
 
 .contact{
@@ -645,11 +648,19 @@ header>#menu-icon{
     width: 100%;
   }
   .project > div{
-    padding-left: 0;
+    padding-left: 1rem;
   }
     .project-card {
   width: 90%;
+  } .input-box input{
+      padding: 0.5rem 3rem;
+      width: 80%;
+      font-size: 1.3rem;
+    }
+  .input-box input::placeholder{
+    font-size: 1.3rem;
   }
+
 }
 
 @media all and (max-width: 375px) {
