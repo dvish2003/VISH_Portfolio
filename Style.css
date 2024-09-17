@@ -647,11 +647,14 @@ header>#menu-icon{
   .grid_card{
     width: 100%;
   }
+
   .project > div{
+    grid-template-columns: 1fr;
     padding-left: 1rem;
   }
     .project-card {
-  width: 90%;
+      padding: 1rem;
+      width: 100%;
   } .input-box input{
       padding: 0.5rem 3rem;
       width: 80%;
