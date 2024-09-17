@@ -621,6 +621,10 @@ header>#menu-icon{
   .button{
     font-size: 12px;
   }
+
+  .btn{
+    font-size: 12px;
+  }
     .about img{
     width: 90%;
     height: auto;
