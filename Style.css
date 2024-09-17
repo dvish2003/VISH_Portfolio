@@ -12,7 +12,7 @@
   background: black;
 }
 .S1-HomePage>header{
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(10px); /* Blur effect */
   position: fixed;
   top: 1rem;
@@ -105,12 +105,13 @@ li>a:hover::before{
   width: 31vw;
   height: 30vw;
   border-radius: 50%;
+  transition: 0.3s ease-in-out;
 /*  overflow: hidden;
   transition: 0.5s;*/
 }
-/*.about img:hover{
+.about img:hover{
   transform: scale(1.2);
-}*/
+}
 .info-box{
   display: flex;
   flex-direction: column;
@@ -159,9 +160,23 @@ font-size: 4rem;
   background-color: white;
   color: black;
 }
+.social{
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
 
+}
 
-
+.social i{
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+.social i:hover{
+  transform: scale(1.1);
+}
 
 
 
@@ -187,8 +202,10 @@ font-size: 4rem;
   width: 35vw;
   border-radius: 3rem;
   box-shadow: 5px 7px 25px #272727;
-
-
+  transition: 0.3s ease-in-out;
+}
+.Service_image:hover{
+  transform: scale(1.1);
 }
 .grid{
   display: grid;
@@ -197,6 +214,7 @@ font-size: 4rem;
 }
 
 .grid_card{
+  box-shadow: 0 0 30px #272727;
   width: 500px;
   border: 2px solid #272727;
   background: black;
@@ -306,6 +324,7 @@ font-size: 24px;
 }
 
 .project-card{
+  box-shadow: 0 0 30px #272727;
   padding: 3rem 3rem;
   display: flex;
   flex-direction: column;
@@ -618,7 +637,10 @@ header>#menu-icon{
 }
 
 @media all and (max-width: 425px) {
-  .button{
+  .social i{
+    font-size: 2.2rem;
+  }
+    .button{
     font-size: 12px;
   }
 
