@@ -461,6 +461,11 @@ footer ul li a {
 
 
 @media(max-width: 1200px){
+
+  .Service{
+    position: relative;
+    top: -100px;
+  }
 header{
   padding: 1rem 2rem;
   gap: 2rem;
