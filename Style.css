@@ -382,6 +382,64 @@ font-size: 24px;
 }
 
 
+.tools-section {
+  text-align: center;
+  padding: 40px;
+}
+
+.tools-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.tools-section p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.tools-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tool-item {
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  gap: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /*
+  padding: 2px;
+  */
+  padding-left: 2rem;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.tool-item:hover {
+  transform: scale(1.05);
+}
+
+.tool-item img {
+  width: 25px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.tool-item h3 {
+  font-size: 1em;
+  margin: 0;
+}
+
+
+
+
+
+
+
 
 .contact .section_title{
   font-weight: 300;
@@ -487,6 +545,7 @@ header{
   .input div{
     font-size: 2.5rem;
   }
+
 }
 @media (max-width: 768px){
 header{
@@ -519,6 +578,7 @@ header{
   .Service_image{
     width: 70vw;
   }
+
 
 }
 
@@ -643,6 +703,7 @@ header>#menu-icon{
 }
 
 @media all and (max-width: 425px) {
+
   .social i{
     font-size: 2.2rem;
   }
@@ -663,7 +724,7 @@ header>#menu-icon{
     color: white;
   }
   .text>#My-name{
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: 600;
     color: white;
   }
