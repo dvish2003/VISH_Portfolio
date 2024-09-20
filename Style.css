@@ -376,9 +376,9 @@ font-size: 24px;
 .project-card h3{
   font-size: 2rem;
   font-weight: 500;
-  background: linear-gradient(to right,rgb(0,157,255),rgb(255,0,255));
-  background-clip: text;
-  color: transparent;
+  /*!*!*background: linear-gradient(to right,rgb(0,157,255),rgb(255,0,255));
+  background-clip: text;*!
+  color: white*!;*/
 }
 
 
@@ -387,7 +387,8 @@ font-size: 24px;
 
   background: #272727;
   text-align: center;
-  padding: 60px 100px 100px 100px;
+  padding: 100px 20px;
+  padding-bottom: 100px;
 }
 
 .tools-section h2 {
@@ -473,174 +474,6 @@ font-size: 24px;
     font-size: 0.8em;
   }
 }
-
-/*
-
-.tools-section {
-  text-align: center;
-  padding: 40px;
-  background: #272727;
-}
-
-.tools-section h2 {
-  color: white;
-  font-size: 4em;
-  margin-bottom: 10px;
-  font-weight: 400;
-}
-
-.tools-section p {
-  font-size: 1.6em;
-  font-weight: 300;
-  margin-bottom: 30px;
-  color: white;
-}
-
-.tools-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.tool-item {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.19);
-  padding: 20px;
-  text-align: center;
-  display: flex;
-  gap: 1rem;
-  width: 9%;
-  height: 10px;
-  transition: transform 0.3s;
-}
-
-.tool-item:hover {
-  transform: scale(1.05);
-}
-
-.tool-item img {
-  width: 48px;
-  height: 48px;
-  margin-bottom: 10px;
-}
-
-.tool-item h3 {
-  font-size: 1em;
-  margin: 0;
-  font-weight: 500;
-}
-
-
-@media (max-width: 1200px) {
-  .tool-item {
-    width: 120px;
-  }
-
-  .tools-section h2 {
-    font-size: 2em;
-  }
-
-  .tools-section p {
-    font-size: 1em;
-  }
-}
-
-@media (max-width: 768px) {
-  .tools-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .tool-item {
-    width: 80%;
-    max-width: 300px; !* Max width to limit expansion on larger screens *!
-  }
-
-  .tools-section h2 {
-    font-size: 1.8em;
-  }
-
-  .tools-section p {
-    font-size: 0.9em;
-  }
-}
-
-@media (max-width: 480px) {
-  .tools-section h2 {
-    font-size: 1.5em;
-  }
-
-  .tools-section p {
-    font-size: 0.8em;
-  }
-
-  .tool-item {
-    padding: 10px;
-  }
-
-  .tool-item img {
-    width: 40px;
-    height: 40px;
-  }
-
-  .tool-item h3 {
-    font-size: 0.9em;
-  }
-}
-
-.tools-section {
-  text-align: center;
-  padding: 40px;
-}
-
-.tools-section h2 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-}
-
-.tools-section p {
-  font-size: 1.2em;
-  margin-bottom: 30px;
-  color: #666;
-}
-
-.tools-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.tool-item {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.3s;
-}
-
-.tool-item:hover {
-  transform: scale(1.05);
-}
-
-.tool-item img {
-  width: 48px;
-  height: 48px;
-  margin-bottom: 10px;
-}
-
-.tool-item h3 {
-  font-size: 1em;
-  margin: 0;
-}
-
-
-*/
-
-
 
 
 
@@ -973,7 +806,7 @@ header>#menu-icon{
     padding-left: 0;
   }
   .project-card {
-    width: 80%;
+    width: 100%;
   }
   .project-card .btn-group{
     display: flex;
@@ -983,7 +816,20 @@ header>#menu-icon{
   }
 }
 
-@media all and (max-width: 320px) {}
+@media all and (max-width: 320px) {
+  .project > div{
+    padding-left: 0;
+  }
+  .project-card {
+    width: 100%;
+  }
+  .project-card .btn-group{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
 
 @media all and (max-width: 1440px) {
 }
