@@ -437,7 +437,7 @@ font-size: 24px;
   height: 23px;
   margin-bottom: 0;
 }
-/* Media Queries for Responsiveness */
+
 @media (max-width: 1200px) {
   .tool-item {
     padding: 15px 20px;
