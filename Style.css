@@ -90,6 +90,10 @@ li>a:hover::before{
   padding: 10rem 12%;
   width: 100%;
   position: relative;
+  background: radial-gradient(circle at center,
+  rgba(255, 255, 255, 1) 30%,
+  rgba(224, 203, 191, 0.8) 50%,
+  rgba(173, 170, 241, 0.6) 70%);
 }
 .about{
   display: flex;
@@ -104,7 +108,7 @@ li>a:hover::before{
 }
 
 .about img{
-  border: 10px solid gray;
+  border: 8px solid gray;
   width: 31vw;
   height: 30vw;
   border-radius: 50%;
@@ -125,12 +129,12 @@ li>a:hover::before{
 .text>#Hello-Word{
   font-size: 3.3rem;
   font-weight: 500;
-  color: white;
+  color: black;
 }
 .text>#My-name{
 font-size: 4rem;
   font-weight: 600;
-  color: white;
+  color: black;
 }
 .text>#i-am-Developer{
   font-size: 2rem;
@@ -154,6 +158,7 @@ font-size: 4rem;
   border: 1px solid white;
   box-shadow: 0 0 40px #272727;
   color: white;
+  background: black;
   cursor: pointer;
   font-weight: 500;
   text-wrap: nowrap;
