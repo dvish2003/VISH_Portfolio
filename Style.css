@@ -14,9 +14,6 @@
 .S1-HomePage>header{
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(10px); /* Blur effect */
-  /*
-  background: white;
-  */
   position: fixed;
   top: 1rem;
   left: 50%;
@@ -90,10 +87,6 @@ li>a:hover::before{
   padding: 10rem 12%;
   width: 100%;
   position: relative;
-  background: radial-gradient(circle at center,
-  rgba(255, 255, 255, 1) 30%,
-  rgba(224, 203, 191, 0.8) 50%,
-  rgba(173, 170, 241, 0.6) 70%);
 }
 .about{
   display: flex;
@@ -108,7 +101,7 @@ li>a:hover::before{
 }
 
 .about img{
-  border: 8px solid gray;
+  border: 10px solid gray;
   width: 31vw;
   height: 30vw;
   border-radius: 50%;
@@ -129,13 +122,12 @@ li>a:hover::before{
 .text>#Hello-Word{
   font-size: 3.3rem;
   font-weight: 500;
-  color: black;
+  color: white;
 }
-
 .text>#My-name{
 font-size: 4rem;
   font-weight: 600;
-  color: black;
+  color: white;
 }
 .text>#i-am-Developer{
   font-size: 2rem;
@@ -159,7 +151,6 @@ font-size: 4rem;
   border: 1px solid white;
   box-shadow: 0 0 40px #272727;
   color: white;
-  background: black;
   cursor: pointer;
   font-weight: 500;
   text-wrap: nowrap;
@@ -277,48 +268,134 @@ font-size: 4rem;
   color: black;
 }
 
-/*
-.About-me{
+
+.About-me {
   color: white;
-  background: black;
+  background:#1e1f20;;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: -1.5rem;
-  padding: 130px;
+  gap: 1.9rem;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 130px;
+  padding-top: 50px;
 }
 
-.about-img img{
+.about-img img {
   position: relative;
-  left: 160px;
+  /*
+  left: 200px;
+  */
   max-width: 650px;
   height: auto;
   width: 100%;
   border-radius: 20px;
 }
 
-.about-text1 h2{
-  font-size: 80px;
-  line-height: 1;
+.about-text1 h2 {
+  font-size: 70px;
+  position: relative;
+  top: -69px;
 }
+
+.about-text1 > h2 > span,
+.about-text1 > h4 > span {
+  background: linear-gradient(to right, rgb(0,157,255), rgb(255,0,255));
+  background-clip: text;
+  color: transparent;
+}
+
 .about-text1 h4 {
-font-size: 24px;
-  font-weight: 600;
-  line-height: 1.7rem;
-  margin: 15px 0 30px;
+  font-size: 36px;
+  font-weight: 400;
+  font-family: "Sofadi One", system-ui;
+  position: relative;
+  top: -60px;
 }
-.about-text1 p{
-  font-size: 17px;
+
+
+.about-text1 p {
+  font-size: 22px;
   line-height: 1.8;
   margin-bottom: 4rem;
 }
-*/
 
-/*
-.Img-my{
-  width: 100px;
+@media (max-width: 1200px) {
+  .About-me {
+    padding: 100px;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-img img {
+    left: 0;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .about-text1 h2 {
+    font-size: 50px;
+    top: 0;
+  }
+
+  .about-text1 h4 {
+    font-size: 28px;
+    top: 0;
+  }
+
+  .about-text1 p {
+    font-size: 20px;
+  }
 }
-*/
+
+@media (max-width: 768px) {
+  .About-me {
+    padding: 60px;
+  }
+
+  .about-text1 h2 {
+    font-size: 40px;
+  }
+
+  .about-text1 h4 {
+    font-size: 24px;
+  }
+
+  .about-text1 p {
+    font-size: 18px;
+  }
+
+  .about-img img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .About-me {
+    padding: 40px;
+  }
+
+  .about-text1 h2 {
+    font-size: 32px;
+  }
+
+  .about-text1 h4 {
+    font-size: 20px;
+  }
+
+  .about-text1 p {
+    font-size: 16px;
+  }
+
+  .about-img img {
+    width: 100%;
+  }
+}
+
+
+
 
 .project{
   background: black;
@@ -392,7 +469,7 @@ font-size: 24px;
 
 
 .tools-section {
-  background: #272727;
+  background: #1e1f20;;
   text-align: center;
   padding: 200px 20px;
   padding-bottom: 150px;
@@ -568,6 +645,10 @@ footer ul li a {
 
 
 @media(max-width: 1200px){
+.About-me{
+  position: relative;
+  top: -100px;
+}
 
   .Service{
     position: relative;
