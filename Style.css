@@ -179,7 +179,7 @@ font-size: 4rem;
 }
 
 
-
+/*Service*/
 .Service{
   background: black;
   padding-bottom: 70px;
@@ -269,6 +269,8 @@ font-size: 4rem;
 }
 
 
+
+/*About Me section*/
 .About-me {
   color: white;
   background:#1e1f20;;
@@ -284,9 +286,6 @@ font-size: 4rem;
 
 .about-img img {
   position: relative;
-  /*
-  left: 200px;
-  */
   max-width: 650px;
   height: auto;
   width: 100%;
@@ -397,6 +396,8 @@ font-size: 4rem;
 
 
 
+/*Project Section*/
+
 .project{
   background: black;
   color: white;
@@ -461,13 +462,14 @@ font-size: 4rem;
 .project-card h3{
   font-size: 2rem;
   font-weight: 500;
-  /*!*!*background: linear-gradient(to right,rgb(0,157,255),rgb(255,0,255));
-  background-clip: text;*!
-  color: white*!;*/
 }
 
 
 
+
+
+
+/*Tools*/
 .tools-section {
   background: #1e1f20;;
   text-align: center;
@@ -566,7 +568,7 @@ font-size: 4rem;
 }
 
 
-
+/*Contact*/
 .contact .section_title{
   font-weight: 300;
 }
@@ -644,6 +646,7 @@ footer ul li a {
 
 
 @media(max-width: 1200px){
+
   .Service_image{
     display: none;
   }
