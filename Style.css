@@ -298,11 +298,16 @@ font-size: 4rem;
   top: -69px;
 }
 
-.about-text1 > h2 > span,
+.about-text1 > h2 > span{  background: linear-gradient(to right, rgb(0,157,255), rgb(255,0,255));
+  background-clip: text;
+  color: transparent;
+}
 .about-text1 > h4 > span {
   background: linear-gradient(to right, rgb(0,157,255), rgb(255,0,255));
   background-clip: text;
   color: transparent;
+  font-family: "Sofadi One", system-ui;
+
 }
 
 .about-text1 h4 {
@@ -313,9 +318,13 @@ font-size: 4rem;
   top: -60px;
 }
 
-
+.Ijse{
+  color: red;
+  font-weight: 500;
+}
 .about-text1 p {
-  font-size: 22px;
+  font-size: 25px;
+  font-family: "Sofadi One", system-ui;
   line-height: 1.8;
   margin-bottom: 4rem;
 }
