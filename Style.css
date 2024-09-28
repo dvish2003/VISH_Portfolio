@@ -112,6 +112,7 @@ li>a:hover::before{
 .about img:hover{
   transform: scale(1.2);
 }
+
 .info-box{
   display: flex;
   flex-direction: column;
@@ -137,7 +138,29 @@ font-size: 4rem;
    background-clip: text;
    color: transparent;
 }
+.typewriter {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden;
+  border-right: .15em solid gray;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation:
+          typing 3.5s steps(30, end),
+          blink-caret .5s step-end infinite;
+}
 
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: gray }
+}
 .btn-group{
   display: flex;
   gap: 2rem;
