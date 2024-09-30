@@ -122,8 +122,8 @@ li > a:hover::before {
     width: 31vw;
     height: 30vw;
     border-radius: 50%;
-    transition: 0.3s ease-in-out;
-    overflow: hidden;
+  /*  transition: 0.3s ease-in-out;
+    overflow: hidden;*/
 
 }
 
@@ -234,7 +234,11 @@ li > a:hover::before {
     font-size: 4rem;
     font-weight: 100;
     margin-bottom: 3rem;
-    color: white;
+    color: black;
+    text-shadow: 0px 3px 0px #b2a98f,
+    0px 14px 10px rgba(0,0,0,0.15),
+    0px 24px 2px rgba(0,0,0,0.1),
+    0px 34px 30px rgba(0,0,0,0.1);
 }
 
 .Service_info {
@@ -262,11 +266,14 @@ li > a:hover::before {
 }
 
 .grid_card {
-    box-shadow: 0 0 30px #272727;
+ /*   box-shadow: 0 0 30px #272727;*/
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 450px;
+    /*
     border: 2px solid #272727;
-    background: black;
-    color: white;
+    */
+    background: white;
+    color: black;
     border-radius: 3rem;
     padding: 2rem;
     display: flex;
@@ -321,8 +328,13 @@ li > a:hover::before {
 
 /*About Me section*/
 .About-me {
-    color: white;
-    background: #1e1f20;
+    color: black;
+    background: linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 1) 30%,
+            rgba(180, 180, 255, 0.8) 70%,
+            rgba(255, 180, 180, 0.6) 100%
+    );
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -458,7 +470,12 @@ li > a:hover::before {
 /*Project Section*/
 
 .project {
-    background: black;
+    background: linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 1) 30%,
+            rgba(180, 180, 255, 0.8) 70%,
+            rgba(255, 180, 180, 0.6) 100%
+    );
     color: white;
     padding: 20px;
 }
@@ -470,7 +487,10 @@ li > a:hover::before {
 }
 
 .project-card {
+    color: black;
+    /*
     box-shadow: 0 0 30px #272727;
+    */
     padding: 3rem 3rem;
     display: flex;
     flex-direction: column;
@@ -478,7 +498,8 @@ li > a:hover::before {
     justify-content: center;
     text-align: center;
     gap: 1.5rem;
-    border: 2px solid #272727;
+    /*border: 2px solid #272727;*/
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 3rem;
     cursor: pointer;
     transition: 0.3s ease-in-out;
@@ -528,7 +549,7 @@ li > a:hover::before {
 
 /*Tools*/
 .tools-section {
-    background: #1e1f20;;
+    background: linear-gradient(135deg, #1a1a1a, #262626, #1c1c1c);
     text-align: center;
     padding: 200px 20px;
     padding-bottom: 150px;
@@ -629,8 +650,12 @@ li > a:hover::before {
 
 
 .contact {
-    background: black;
-}
+    background: linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 1) 30%,
+            rgba(180, 180, 255, 0.8) 70%,
+            rgba(255, 180, 180, 0.6) 100%
+    );}
 
 .input-box {
     display: flex;
@@ -649,7 +674,7 @@ li > a:hover::before {
 .input-box input {
     position: relative;
     border-radius: 3rem;
-    border: 3px solid black;
+    border: 1px solid black;
     padding: 2rem 8rem;
     font-size: 3rem;
 }
@@ -671,7 +696,12 @@ li > a:hover::before {
 }
 
 footer {
-    background: black;
+    background: linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 1) 30%,
+            rgba(180, 180, 255, 0.8) 70%,
+            rgba(255, 180, 180, 0.6) 100%
+    );
     bottom: 0;
     left: 0;
     height: 10rem;
@@ -691,14 +721,14 @@ footer > ul {
 
 
 footer ul li a {
-    color: white;
+    color: black;
     font-weight: 400;
 }
 
 .copyright {
     font-size: 16px;
     margin-top: 2rem;
-    color: white;
+    color: black;
 }
 
 
