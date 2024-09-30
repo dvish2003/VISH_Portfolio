@@ -112,7 +112,6 @@ li>a:hover::before{
 .about img:hover{
   transform: scale(1.2);
 }
-
 .info-box{
   display: flex;
   flex-direction: column;
@@ -184,6 +183,8 @@ font-size: 4rem;
 .Service{
   background: black;
   padding-bottom: 70px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .section_title{
   text-align: center;
@@ -191,12 +192,14 @@ font-size: 4rem;
   font-weight: 100;
   margin-bottom: 3rem;
   color: white;
+
 }
 .Service_info{
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5rem;
+
 }
 
 .Service_image{
@@ -212,16 +215,26 @@ font-size: 4rem;
   display: grid;
   grid-template-columns:repeat(2,1fr);
   gap: 2rem;
+
 }
 
 .grid_card{
   box-shadow: 0 0 30px #272727;
+  /*
   width: 500px;
+  */
+  /*
+  height: auto;
+  */
   border: 2px solid #272727;
   background: black;
   color: white;
   border-radius: 3rem;
-  padding: 2rem;
+  padding: 3rem;
+ /*   padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 1rem;*/
   display: flex;
   flex-direction: column;
   align-items: baseline;
@@ -230,15 +243,35 @@ font-size: 4rem;
   transition: 0.2s ease-in-out;
 }
 
+/*
+.grid_card{
+  width: fit-content;
+  border: 2px solid #272727;
+  border-radius: 3rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: left;
+  cursor: pointer;
+  background: black;
+  color: white;
+  box-shadow: 0 0 30px #272727;
+}
+*/
+
+
 .grid_card:hover{
   transform: scale(1.02);
   background: white;
   color: black;
 }
 
-.grid_card>div{
+.grid_card>i{
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom : 1rem;
+    position: relative;
+    top: -15px;
 }
 
 .grid_card span{
@@ -247,6 +280,8 @@ font-size: 4rem;
   background: linear-gradient(to right,rgb(0,157,255),rgb(255,0,255));
   background-clip: text;
   color: transparent;
+  position: relative;
+  top: -14px;
 }
 
 .button{
@@ -260,7 +295,7 @@ font-size: 4rem;
   text-wrap: nowrap;
   transition: 0.2s ease-in-out;
   position: relative;
-  bottom: -15px;
+  bottom: -24px;
 }
 
 .button:hover{
@@ -274,7 +309,7 @@ font-size: 4rem;
 /*About Me section*/
 .About-me {
   color: white;
-  background:#1e1f20;;
+  background:#1e1f20;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -660,6 +695,7 @@ footer ul li a {
   .Service_image{
     display: none;
   }
+
 .About-me{
   position: relative;
   top: -100px;
@@ -889,10 +925,22 @@ header>#menu-icon{
     padding: 1rem;
   }
   .grid_card{
-    width: 100%;
+     width: 400px;
+      font-size: 15px;
+      /*
+      padding: 3rem;
+      */
   }
+    .grid_card>i{
+        font-size: 1.3rem;
+    }
 
-  .project > div{
+    .grid_card span{
+        font-size: 1.3rem;
+    }
+
+
+    .project > div{
     grid-template-columns: 1fr;
     padding-left: 1rem;
   }
@@ -923,6 +971,13 @@ header>#menu-icon{
     align-items: center;
     justify-content: center;
   }
+    .grid_card{
+        width: 350px;
+        font-size: 15px;
+        /*
+        padding: 3rem;
+        */
+    }
 }
 
 @media all and (max-width: 320px) {
@@ -938,7 +993,15 @@ header>#menu-icon{
     align-items: center;
     justify-content: center;
   }
+    .grid_card{
+        width: 300px;
+        font-size: 13px;
+        /*
+        padding: 3rem;
+        */
+    }
 }
 
 @media all and (max-width: 1440px) {
+
 }
