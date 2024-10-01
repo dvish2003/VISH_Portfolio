@@ -505,7 +505,7 @@ li > a:hover::before {
 
 /*Tools*/
 .tools-section {
-    background: #1e1f20;;
+    background: linear-gradient(135deg, #1a1a1a, #262626, #1c1c1c);
     text-align: center;
     padding: 200px 20px;
     padding-bottom: 150px;
