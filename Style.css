@@ -1,3 +1,8 @@
+:root {
+    --hue: 358;
+    --container-color: hsl(var(--hue), 2%, 10%);
+}
+
 * {
     font-family: 'Poppins', sans-serif;
     padding: 0;
@@ -6,7 +11,6 @@
     list-style: none;
     text-decoration: none;
     scroll-behavior: smooth;
-    list-style: none;
 }
 
 .S1-HomePage {
@@ -229,7 +233,7 @@ li > a:hover::before {
 }
 
 .Service_image:hover {
-    transform: scale(1.1);
+    transform: scale(1.01);
 }
 
 .grid {
@@ -239,10 +243,14 @@ li > a:hover::before {
 }
 
 .grid_card {
+    /*
     box-shadow: 0 0 30px #272727;
+    */
     width: 450px;
+    /*
     border: 2px solid #272727;
-    background: black;
+    */
+    background: var(--container-color);
     color: white;
     border-radius: 3rem;
     padding: 2rem;
@@ -256,8 +264,8 @@ li > a:hover::before {
 
 .grid_card:hover {
     transform: scale(1.02);
-    background: white;
-    color: black;
+    background-color: #262626;
+    color: white;
 }
 
 .grid_card > i {
@@ -274,13 +282,16 @@ li > a:hover::before {
     position: relative;
     top: -9px;
 }
+.grid_card:hover .button{
+  background: black;
+}
 
 .button {
     border-radius: 3rem;
     padding: 0.5rem 1.5rem;
     border: 1px solid white;
     color: white;
-    background: black;
+    background: transparent;
     cursor: pointer;
     font-weight: 500;
     text-wrap: nowrap;
@@ -299,7 +310,7 @@ li > a:hover::before {
 /*About Me section*/
 .About-me {
     color: white;
-    background: #1e1f20;
+    background: linear-gradient(135deg, #1a1a1a, #262626, #1c1c1c);
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -447,7 +458,7 @@ li > a:hover::before {
 }
 
 .project-card {
-    box-shadow: 0 0 30px #272727;
+    background: var(--container-color);
     padding: 3rem 3rem;
     display: flex;
     flex-direction: column;
@@ -455,12 +466,13 @@ li > a:hover::before {
     justify-content: center;
     text-align: center;
     gap: 1.5rem;
-    border: 2px solid #272727;
     border-radius: 3rem;
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
-
+#b1,#b2,#b3{
+    display: none;
+}
 .project-card > h2 {
     font-size: 1.1rem;
     position: relative;
@@ -469,8 +481,8 @@ li > a:hover::before {
 }
 
 .project-card:hover {
-    background: white;
-    color: black;
+    background-color: #262626;
+    color: white;
     transform: translateY(-10px) scale(1.02);
 }
 
@@ -501,6 +513,75 @@ li > a:hover::before {
     font-size: 2rem;
     font-weight: 500;
 }
+/*project read more model*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0,0%,1%,.1);
+    backdrop-filter: blur(16px);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: gray;
+}
+
+
+.modal h3 {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.modal p {
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+
+.project-card h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 480px) {
+    .modal-content {
+        width: 80%;
+    }
+    .modal h3 {
+        font-size: 1.2rem;
+    }
+
+    .modal p {
+        font-size: 15px;
+    }
+
+}
+.project > h2 {
+    font-weight: 600;
+}
 
 
 /*Tools*/
@@ -530,6 +611,8 @@ li > a:hover::before {
     margin-left: auto;
     margin-right: auto;
 }
+
+
 
 .tools-container {
     display: flex;
@@ -727,6 +810,22 @@ footer ul li a {
 }
 
 @media (max-width: 768px) {
+    .btn-group {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .btn{
+        padding: 0.5rem 1rem;
+
+    }
+    .pp{
+        display: none;
+    }
+    #b1,#b2,#b3{
+        display: block;
+    }
     header {
         gap: 1rem;
         padding: 1rem 1rem;
