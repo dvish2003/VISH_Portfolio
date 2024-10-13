@@ -61,6 +61,7 @@ function isInViewport(el) {
     );
 }
 
+
 function handleScrollFlip() {
     const imageContainers = document.querySelectorAll('.image-container');
 
