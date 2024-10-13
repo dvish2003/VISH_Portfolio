@@ -39,3 +39,53 @@ window.onclick = function(event) {
         }
     });
 };
+// Function to detect if the element is in the viewport
+function isInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+
+function isInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+function handleScrollFlip() {
+    const imageContainers = document.querySelectorAll('.image-container');
+
+    imageContainers.forEach(container => {
+        const frontImage = container.querySelector('.front-img');
+        const backImage = container.querySelector('.back-img');
+
+        if (isInViewport(container)) {
+            frontImage.style.transform = 'rotateY(0deg)';
+            backImage.style.transform = 'rotateY(180deg)';
+
+            setTimeout(() => {
+                frontImage.style.transform = 'rotateY(180deg)';
+                backImage.style.transform = 'rotateY(360deg)';
+            }, 2000);
+
+            setTimeout(() => {
+                frontImage.style.transform = 'rotateY(0deg)';
+                backImage.style.transform = 'rotateY(180deg)';
+            }, 7000);
+        }
+    });
+}
+
+
+window.addEventListener('scroll', handleScrollFlip);
+
+document.addEventListener('DOMContentLoaded', handleScrollFlip);
