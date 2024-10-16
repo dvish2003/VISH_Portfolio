@@ -20,7 +20,9 @@ body{
     background-attachment: fixed;
     padding-bottom: 20px;
 }
-
+.S1-HomePage {
+    background: black;
+}
 
 .S1-HomePage > header {
     background: rgba(255, 255, 255, 0.7);
@@ -106,8 +108,7 @@ li > a:hover::before {
     padding: 10rem 12%;
     width: 100%;
     position: relative;
-    background: transparent;
-    backdrop-filter: blur(80px);
+
 }
 
 .about {
@@ -325,8 +326,7 @@ li > a:hover::before {
 /*About Me section*/
 .About-me {
     color: white;
-    background: transparent;
-    backdrop-filter: blur(80px);
+    background: linear-gradient(135deg, #1a1a1a, #262626, #1c1c1c);
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -623,7 +623,7 @@ body .container .card .box .content a:hover {
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    background: transparent;
+    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
     border-radius: 10px;
@@ -767,7 +767,7 @@ body .container .card .box .content a:hover {
 }
 /*Project Section*/
 
-.project {
+/*.project {
     background: black;
     color: white;
     padding: 20px;
@@ -835,7 +835,7 @@ body .container .card .box .content a:hover {
     font-size: 2rem;
     font-weight: 500;
 }
-/*project read more model*/
+!*project read more model*!
 .modal {
     display: none;
     position: fixed;
@@ -903,14 +903,13 @@ body .container .card .box .content a:hover {
 }
 .project > h2 {
     font-weight: 600;
-}
+}*/
 /*==================================================================================================================================================================================================================================*/
 
 
 /*Tools*/
 .tools-section {
-    background: transparent;
-    backdrop-filter: blur(80px);
+    background: linear-gradient(135deg, #1a1a1a, #262626, #1c1c1c);
     text-align: center;
     padding: 200px 20px;
     padding-bottom: 150px;
@@ -1060,8 +1059,7 @@ body .container .card .box .content a:hover {
 }
 
 footer {
-    background: transparent;
-    backdrop-filter: blur(100px);
+    background: black;
     bottom: 0;
     left: 0;
     height: 10rem;
