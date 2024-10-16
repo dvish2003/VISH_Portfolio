@@ -20,9 +20,6 @@ body{
     background-attachment: fixed;
     padding-bottom: 20px;
 }
-.S1-HomePage {
-    background: black;
-}
 
 .S1-HomePage > header {
     background: rgba(255, 255, 255, 0.7);
@@ -109,7 +106,6 @@ li > a:hover::before {
     width: 100%;
     position: relative;
     background: transparent;
-    backdrop-filter: blur(20px);
 }
 
 .about {
@@ -176,6 +172,7 @@ li > a:hover::before {
 }
 
 .btn {
+    backdrop-filter: blur(300px);
     border-radius: 3rem;
     padding: 0.5rem 1.5rem;
     border: 1px solid white;
@@ -210,6 +207,12 @@ li > a:hover::before {
 .social i:hover {
     transform: scale(1.1);
 }
+
+
+
+
+
+
 
 /*==================================================================================================================================================================================================================================*/
 /*Service*/
@@ -457,6 +460,7 @@ li > a:hover::before {
 
 /*==================================================================================================================================================================================================================================*/
 
+/*
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
 * {
@@ -466,7 +470,7 @@ li > a:hover::before {
     font-family: "Poppins", sans-serif;
 }
 
-/*
+!*
 body {
     display: flex;
     justify-content: center;
@@ -477,7 +481,7 @@ body {
     background: #232427;
     *!
 }
-*/
+*!
 .Portfolio{
     display: flex;
     justify-content: center;
@@ -545,9 +549,9 @@ body .container .card .box:before {
     left: 0;
     width: 50%;
     height: 100%;
-    /*
+    !*
     background: rgba(255, 255, 255, 0.03);
-    */
+    *!
 }
 
 body .container .card .box .content {
@@ -598,7 +602,8 @@ body .container .card .box .content a:hover {
 }
 
 
-/*Assignment*/
+!*Assignment*!
+*/
 
 
 /*==================================================================================================================================================================================================================================*/
