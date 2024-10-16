@@ -1,1 +1,0 @@
-/home/vishmee/Desktop/_ (1).gif
