@@ -148,7 +148,7 @@ li > a:hover::before {
 }
 
 .text > #Hello-Word {
-    font-size: 3.3rem;
+    font-size: 3.9rem;
     font-weight: 500;
     color: white;
 }
@@ -616,7 +616,9 @@ body .container .card .box .content a:hover {
     color: #222;
     padding: 5% 10%;
 }
-
+.P1{
+    font-weight: 500;
+}
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -1004,7 +1006,7 @@ body .container .card .box .content a:hover {
 
 /*==================================================================================================================================================================================================================================*/
 
-/*Contact*/
+Contact
 .contact .section_title {
     font-weight: 300;
 }
@@ -1056,6 +1058,8 @@ body .container .card .box .content a:hover {
     transform: translate(50%, -50%);
 }
 
+
+/*=========================================================================================================================================================================================*/
 footer {
     position: relative;
     background: black;
@@ -1092,7 +1096,11 @@ footer ul li a {
 
 
 /*==================================================================================================================================================================================================================================*/
-
+@media (max-width: 1546px) {
+    .Service_image{
+        width: 35vh;
+    }
+}
 @media (max-width: 1200px) {
 
     .Service_image {
@@ -1140,6 +1148,11 @@ footer ul li a {
     }
 }
 
+@media (max-width: 974px) {
+    .card{
+        width: 600px;
+    }
+}
 @media (max-width: 768px) {
     .btn-group {
         display: flex;
@@ -1197,10 +1210,14 @@ footer ul li a {
 
 
 }
-
+@media all and (max-width: 704px) {
+    .card{
+        width: auto;
+    }
+}
 
 @media all and (max-width: 704px) {
-    .project > div {
+    .Projects > div {
         grid-template-columns: 1fr;
     }
 
