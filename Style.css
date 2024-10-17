@@ -14,11 +14,11 @@
 }
 body{
     overflow-x: hidden;
-    background: black;
-    /*background-size: cover;
+    background: url(Asset/Image/139814.jpg);
+    background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    padding-bottom: 20px;*/
+    padding-bottom: 20px;
 }
 
 .S1-HomePage > header {
