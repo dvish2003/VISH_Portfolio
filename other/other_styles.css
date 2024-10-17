@@ -1,7 +1,5 @@
 body{
-    /*
     background: url(Asset/Image/139814.jpg);
-    */
     display: grid;
     place-items: center;
     min-height: 100vh;
