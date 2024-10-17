@@ -1,5 +1,5 @@
 body{
-
+    background: white ;
     display: grid;
     place-items: center;
     min-height: 100vh;
