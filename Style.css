@@ -110,7 +110,7 @@ li > a:hover::before {
     background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
 }
 .AS{
-    color: black;
+    color: white;
 }
 
 .Visit_gitHub:hover {
@@ -485,7 +485,235 @@ li > a:hover::before {
 
 /*==================================================================================================================================================================================================================================*/
 
+/*==================================================================================================================================================================================================================================*/
 
+
+#S5_Assignment {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 10px;
+    background: url(Asset/Image/139814.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-bottom: 20px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.assignment1 {
+    width: 60%;
+    max-width: 1000px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    box-shadow: 0 0 10px rgba(234,234,234,234);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.assignment_cover {
+    height: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    scroll-snap-type: y mandatory;
+}
+
+.assignment_cover::-webkit-scrollbar {
+    display: none;
+}
+
+.assignment_section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.assignment_info {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    scroll-snap-align: start; /* Snap each assignment */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.assignment_info h3 {
+    font-size: 2rem;
+    margin: 0;
+    background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
+    background-clip: text;
+    color: transparent;}
+
+.assignment_info p {
+    font-size: 1.1rem;
+    margin: 20px 0;
+    color: #666;
+    text-align: center;
+}
+
+.assignment_info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.btn-g {
+    display: flex;
+    gap: 2rem;
+}
+
+.btn1 {
+    padding: 0.5rem 1.5rem;
+    border: 1px solid black;
+    box-shadow: 0 0 10px #272727;
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.2s ease-in-out;
+}
+
+.btn1:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 1440px) {
+    .assignment1 {
+        width: 80%;
+        height: 550px;
+    }
+
+    .assignment_info {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .assignment1 {
+        width: 90%;
+        height: 500px;
+    }
+
+    .assignment_info {
+        padding: 35px;
+    }
+
+    .btn1 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .assignment1 {
+        width: 95%;
+        height: 450px;
+    }
+
+    .assignment_info {
+        padding: 30px;
+    }
+
+    .assignment_info h3 {
+        font-size: 1.8rem;
+    }
+
+    .assignment_info p {
+        font-size: 1rem;
+    }
+
+    .btn1 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 425px) {
+    .assignment1 {
+        width: 100%;
+        height: 400px;
+        padding: 20px;
+    }
+
+    .assignment_info {
+        padding: 25px;
+    }
+
+    .assignment_info h3 {
+        font-size: 1.6rem;
+    }
+
+    .assignment_info p {
+        font-size: 0.95rem;
+    }
+
+    .btn1 {
+        font-size: 14px;
+        padding: 0.5rem 1.2rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .assignment1 {
+        height: 350px;
+        padding: 15px;
+    }
+
+    .assignment_info {
+        padding: 20px;
+    }
+
+    .assignment_info h3 {
+        font-size: 1.4rem;
+    }
+
+    .assignment_info p {
+        font-size: 0.85rem;
+    }
+
+    .btn1 {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    .assignment1 {
+        height: 320px;
+        padding: 10px;
+    }
+
+    .assignment_info {
+        padding: 15px;
+    }
+
+    .assignment_info h3 {
+        font-size: 1.3rem;
+    }
+
+    .assignment_info p {
+        font-size: 0.8rem;
+    }
+
+    .btn1 {
+        font-size: 10px;
+        padding: 0.4rem 1rem;
+    }
+}
 
 /*==================================================================================================================================================================================================================================*/
 
