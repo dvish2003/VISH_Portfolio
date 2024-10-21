@@ -484,6 +484,178 @@ li > a:hover::before {
 }
 
 /*==================================================================================================================================================================================================================================*/
+.numbers_1 {
+    width: 100%;
+    margin-bottom: 100px;
+    padding-top: 100px;
+}
+
+.container_number {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 80px;
+}
+
+.text-left {
+    flex: 1;
+    padding-top: 70px;
+    padding-right: 30px;
+}
+
+.text-left h3 {
+    font-size: 55px;
+    font-weight: 500;
+    color: #f9f9f9;
+    margin-bottom: 10px;
+}
+
+.line {
+    width: 100%;
+    background-color: #333;
+    margin-top: 10px;
+}
+
+.right_side {
+    flex: 2;
+    padding-left: 30px;
+}
+
+.right_side h4 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right_item {
+    text-align: center;
+}
+
+.right_item h2 {
+    font-size: 80px;
+    color: #111;
+    margin-bottom: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.right_item h2:hover {
+    transform: scale(1.05);
+}
+
+.right_item p {
+    font-size: 16px;
+    color: #888;
+}
+@media (max-width: 1200px) {
+ .numbers_1{
+     padding-top: 0;
+ }
+    .text-left {
+        padding-top: 0;
+
+    }
+    .text-left h3 {
+        font-size: 35px;
+        color: #f9f9f9;
+        margin-bottom: 10px;
+    }
+    .right_side h4 {
+       margin-top: -100px;
+    }
+
+
+    }
+/* Responsive Design for Tablet and Smaller Devices */
+@media (max-width: 1024px) {
+    .container_number {
+        padding: 30px;
+    }
+
+    .text-left {
+        padding-top: 0;
+
+    }
+    .text-left h3 {
+        font-size: 30px;
+        color: #f9f9f9;
+        margin-bottom: 10px;
+    }
+
+    .right_side h4 {
+        font-size: 22px;
+    }
+
+    .right_item h2 {
+        font-size: 70px;
+    }
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+
+    .container_number {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    .text-left{
+        padding-bottom: 0;
+        margin-top: -100px;
+    }
+   .right_side {
+        padding: 0;
+    }
+
+    .text-left h3 {
+        font-size: 40px;
+    }
+
+    .right_side h4 {
+        font-size: 20px;
+    }
+
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right_item {
+        margin-bottom: 20px;
+    }
+
+    .right_item h2 {
+        font-size: 60px;
+    }
+
+    .right_item p {
+        font-size: 14px;
+    }
+}
+
+/* Responsive Design for Very Small Devices */
+@media (max-width: 480px) {
+    .text-left h3 {
+        font-size: 30px;
+    }
+
+    .right_side h4 {
+        font-size: 18px;
+    }
+
+    .right_item h2 {
+        font-size: 50px;
+    }
+
+    .right_item p {
+        font-size: 12px;
+    }
+}
+
 
 /*==================================================================================================================================================================================================================================*/
 
@@ -980,6 +1152,7 @@ li > a:hover::before {
 /*==================================================================================================================================================================================================================================*/
 
 /*Contact*/
+/*
 .contact .section_title {
     font-weight: 300;
 }
@@ -1026,7 +1199,149 @@ li > a:hover::before {
     left: 10px;
     transform: translate(50%, -50%);
 }
+*/
+/*
 
+.contact-content{
+    padding: 100px 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #fff;
+    text-align: center;
+}
+.contact-content .contact-title h4{
+    font-size: 7vw;
+    text-transform: capitalize;
+    color: white;
+    padding-bottom: 10px;
+}
+.contact-content .contact-title p{
+    padding-bottom: 20px;
+    font-size: 2.6vw;
+}
+.contact{
+    max-width: 700px;
+    margin: auto;
+    text-decoration: none;
+}
+.contact input,.contact textarea{
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    margin-bottom: 10px;
+}
+.cc{
+    border-radius: 3rem;
+}
+
+.contact .submit{
+    width: auto;
+    background-color: black;
+    color: white;
+    padding: 10px 40px;
+    border: 1px solid white;
+    border-radius: 3rem;
+    font-weight: 300;
+    font-size: 18px;
+    text-wrap: nowrap;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 0 40px #272727;
+    position: relative;
+    bottom: -50px;
+
+}
+.contact .submit:hover{
+    background: white;
+    color: black;
+}
+#msg{
+    color: #fff;
+    font-size: 20px;
+    margin-top: -8px;
+    display: block;
+}
+*/
+
+.contact-content .contact-title h4 {
+    font-size: 7vw;
+    text-transform: capitalize;
+    color: white;
+    padding-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+
+
+
+.contact-content {
+    padding: 50px 0;
+    background-color: #1c1c1c;
+    color: #fff;
+    text-align: center;
+}
+
+.contact-title p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact form label {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.contact form input.cc {
+    width: 80%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #333;
+    border-radius: 3rem;
+    background-color: #272727;
+    color: white;
+}
+
+.contact form input.cc::placeholder {
+    color: #888;
+}
+
+.contact form input.submit {
+    width: 50%;
+    padding: 10px;
+    font-size: 1.2em;
+    border: none;
+    background-color: #ff6600;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.contact form input.submit:hover {
+    background-color: #ff4500;
+}
+
+
+@media (max-width: 768px) {
+    .contact-content .contact-title h4 {
+        font-size: 10vw;
+    }
+
+    .contact form input.cc {
+        width: 90%;
+    }
+
+    .contact form input.submit {
+        width: 70%;
+    }
+}
 
 /*=========================================================================================================================================================================================*/
 footer {
