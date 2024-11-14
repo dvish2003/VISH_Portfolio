@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Contact Section</title>
+
+    <!-- FontAwesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .contact-section {
+            display: flex;
+            flex-direction: column;
+            padding: 60px 20px;
+            background-color: #f9f9f9;
+        }
+
+        .contact-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-info, .contact-form {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .contact-info {
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-info h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .contact-info .info-item {
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .contact-info .info-item i {
+            font-size: 1.5rem;
+            color: #333;
+            margin-right: 10px;
+        }
+
+        .contact-form h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        /* Flexbox for larger screens */
+        @media (min-width: 768px) {
+            .contact-section {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .contact-content {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+            }
+        }
+
+        /* Small Mobile Devices */
+        @media (max-width: 375px) {
+            .contact-info h2,
+            .contact-form h2 {
+                font-size: 1.5rem;
+            }
+            .contact-info .info-item i {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<section class="contact-section" id="contact">
+    <div class="contact-content">
+        <!-- Left Side: Contact Info with Icons -->
+        <div class="contact-info">
+            <h2>Contact Info</h2>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <span>email@example.com</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>123 Main Street, Anytown</span>
+            </div>
+            <div class="info-item">
+                <i class="fab fa-facebook"></i>
+                <span>facebook.com/yourprofile</span>
+            </div>
+            <div class="info-item">
+                <i class="fab fa-github"></i>
+                <span>github.com/yourusername</span>
+            </div>
+        </div>
+
+        <!-- Right Side: Contact Form -->
+        <div class="contact-form">
+            <h2>Send a Message</h2>
+            <form>
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
