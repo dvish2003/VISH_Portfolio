@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Case 1</title>
+  <style>
+    section{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+    }
+    section>section:first-child{
+      display: flex;
+      margin-top: 100px;
+      margin-left: 50px;
+      text-align: center;
+      justify-content: center;
+    }
+    section>section:first-child>div>img{
+      width: 200px;
+      height: 200px;
+    }
+    section>section:nth-child(2){
+      display: flex;
+      position: relative;
+      left: 80px;
+    }
+      section>section:nth-child(2)>button{
+      width: 450px;
+      padding: 17.5px 60px;
+      border: 0;
+      border-radius: 100px;
+      background-color:  darkgreen;
+      color: #ffffff;
+      font-weight: Bold;
+      font-size: 13px;
+      margin-top: 20px;
+      margin-left: 300px;
+    }
+    section>section:first-child{
+      display: flex;
+      margin-top: 100px;
+      margin-left: 50px;
+    }
+    section>section:first-child>div>img{
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+<section>
+  <section>
+    <div>
+      <h1>A</h1>
+      <img src="assets/_%20(1).gif">
+    </div>
+    <div>
+      <h1>B</h1>
+      <img src="assets/_%20(1).gif">
+    </div>
+    <div>
+      <h1>C</h1>
+      <img src="assets/_%20(1).gif">
+    </div>
+    <div>
+      <h1>D</h1>
+      <img src="assets/_%20(1).gif">
+    </div>
+    <div>
+      <h1>E</h1>
+      <img src="assets/_%20(1).gif">
+    </div>
+    <div>
+      <h1>F</h1>
+      <img src="assets/_%20(1).gif">
+    </div>
+  </section>
+  <section>
+    <button id="start">START</button>
+    <button id="stop">STOP</button>
+  </section>
+</section>
+<script>
+  let array = ["A","B","C","D","E","F"];
+  let stop;
+  document.getElementById('start').addEventListener('click',() => {
+    if(!stop) {
+      stop = setInterval(() =>{
+        let lastValue =  array.pop();
+        array.unshift(lastValue);
+        document.getElementsByTagName("h1")[0].innerText = array[0];
+        document.getElementsByTagName("h1")[1].innerText = array[1];
+        document.getElementsByTagName("h1")[2].innerText = array[2];
+        document.getElementsByTagName("h1")[3].innerText = array[3];
+        document.getElementsByTagName("h1")[4].innerText = array[4];
+        document.getElementsByTagName("h1")[5].innerText = array[5];
+      },1000);
+    }
+  })
+  document.getElementById('stop').addEventListener('click',() =>{
+    clearInterval(stop);
+    stop = null;
+  })
+</script>
+</body>
+</html>

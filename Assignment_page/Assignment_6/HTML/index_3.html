@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Pizza - Order Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<style>
+   .row{
+       gap: 2rem;
+   }
+    .table-light{
+        background: #00FF47;
+    }
+
+    .navbar{
+        font-weight:bold;
+        color: black;
+    }
+
+    .headerimage{
+        background-image: url("../Asset/image/wallpaperflare.com_wallpaper (3).jpg");
+    }
+         .btn {
+         border-radius: 50px;
+         padding: 0.5rem 2rem;
+         border: 1px solid white;
+         box-shadow: 0 0 10px #272727;
+         color: white;
+         background: black;
+         cursor: pointer;
+         font-weight: 500;
+         transition: 0.2s ease-in-out;
+     }
+
+</style>
+<body>
+
+<nav class="navbar navbar-expand-lg headerimage navbar-dark bg-primary">
+    <a class="navbar-brand" href="#" style="font-size: 20px">Hot Pizza</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <ul class="offset-5  navbar-nav">
+            <li class="nav-item ">
+                <a class="nav-link " href="../index_4.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="#">Booking-Pub</a>
+            </li>
+            <li class="`nav-item ">
+                <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link " href="index_1.html">Customer</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index_2.html">Item</a>
+            </li>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="index_3.html">Orders</a>
+            </li>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container mt-3 p-4" style="background: #ced6e0;">
+    <div class="row">
+        <div class="col-md-6 p-3" style="background: white">
+            <h2>Customer Information</h2>
+            <div class="form-group">
+                <label for="customer">Customer:</label>
+                <select class="form-control" id="customer">
+                    <option value="C001">C001</option>
+                    <option value="New Customer">New Customer</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="customerName">Customer Name:</label>
+                <input type="text" class="form-control" id="customerName" placeholder="Enter customer name">
+            </div>
+            <div class="form-group">
+                <label for="customerContact">Customer Contact:</label>
+                <input type="text" class="form-control" id="customerContact" placeholder="Enter customer contact">
+            </div>
+            <div class="form-group">
+                <label for="orderID">Order ID:</label>
+                <input type="text" class="form-control" id="orderID" placeholder="Enter order ID">
+            </div>
+        </div>
+        <div class="col-md-5 p-3" style="background: white">
+            <h2>Item Information</h2>
+            <div class="form-group">
+                <label for="item">Item:</label>
+                <select class="form-control" id="item">
+                    <option value="Pizza">Pizza</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="itemPrice">Item Price:</label>
+                <input type="text" class="form-control" id="itemPrice" placeholder="Enter item price">
+            </div>
+            <div class="form-group">
+                <label for="itemQtyOnHand">Item Qty On Hand:</label>
+                <input type="text" class="form-control" id="itemQtyOnHand" placeholder="Enter item quantity on hand">
+            </div>
+            <div class="form-group">
+                <label for="orderQuantity">Order Quantity:</label>
+                <input type="text" class="form-control" id="orderQuantity" placeholder="Enter order quantity">
+            </div>
+            <button type="button" class="btn btn-primary">Place Order</button>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <h2>Order Summary</h2>
+            <table class="table table-striped">
+                <thead class="table-light">
+                <tr>
+                    <th>Item Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="total">Total:</label>
+                <input type="text" class="form-control" id="total" placeholder="Total amount" readonly>
+            </div>
+            <div class="form-group">
+                <label for="cash">Cash:</label>
+                <input type="text" class="form-control" id="cash" placeholder="Enter cash amount">
+            </div>
+            <div class="form-group">
+                <label for="balance">Balance:</label>
+                <input type="text" class="form-control" id="balance" placeholder="Balance amount" readonly>
+            </div>
+            <button type="button" class="btn btn-primary">Renew Order</button>
+            <button type="button" class="btn btn-success">Submit</button>
+            <button type="button" class="btn btn-danger">Clear</button>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+</html>

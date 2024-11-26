@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case_3</title>
+</head>
+<body>
+<style>
+  body{
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  div{
+    width: 200px;
+    height: 150px;
+    background: darkgreen;
+    border-radius: 5%;
+    animation-name: my-animation;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  @keyframes  my-animation {
+    0%{
+      margin-left: 0;
+      margin-top: 0;
+    }
+
+      25% {
+        margin-left: calc(100vw - 150px);
+        margin-top: 0;
+        transform: rotate(180deg);
+        background: #ff253a;
+      }
+      50% {
+        margin-left: calc(100vw - 150px);
+        margin-top: calc(100vh - 80px);
+        transform: rotate(0deg);
+        background: orange;
+      }
+      75% {
+        margin-left: 0;
+        margin-top: calc(100vh - 80px);
+        transform: rotate(-180deg);
+        background: pink;
+      }
+
+  }
+</style>
+<div></div>
+</body>
+</html>

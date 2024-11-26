@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case_4</title>
+</head>
+<style>
+    div{
+        border-radius: 100%;
+        border: 5px solid black;
+        width: 5px;
+        height: 5px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        animation: anim 3000ms infinite;
+    }
+    @keyframes anim {
+        from{
+            width: 5px;
+        }
+        to{
+            width: 200px;
+            height: 200px;
+            opacity: 0;
+        }
+    }
+</style>
+<body>
+<div></div>
+</body>
+</html>

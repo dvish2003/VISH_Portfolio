@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 2</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        section>section:first-child>div{
+            width: 700px;
+            height: 3px;
+            background-color: white;
+            position: absolute;
+        }
+        section>section:first-child>div:first-child{
+            margin-left: 100px;
+            margin-top: 200px;
+        }
+        section>section:first-child>div:nth-child(2){
+            margin-left: 100px;
+            margin-top: 300px;
+        }
+        section>section:nth-child(2){
+            display: flex;
+            column-gap: 20px;
+        }
+        section>section:nth-child(2)>div{
+            position: relative;
+            width: 100px;
+            height: 50px;
+            border-radius: 5px;
+            border: 2px solid white;
+            left: 100px;
+            top: 230px;
+        }
+        section>section:nth-child(3){
+            padding-top: 300px;
+        }
+        section>section:nth-child(3)>button{
+            width: 500px;
+            padding: 17px 60px;
+            border: 0;
+            border-radius: 100px;
+            background-color: darkgreen;
+            color: #ffffff;
+            font-weight: Bold;
+            font-size: 13px;
+            margin-top: 20px;
+            margin-left: 300px;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <section>
+        <div></div>
+        <div></div>
+    </section>
+    <section>
+        <div class="light" id="1" ></div>
+        <div class="light" id="2" ></div>
+        <div class="light" id="3" ></div>
+        <div class="light" id="4" ></div>
+        <div class="light" id="5" ></div>
+        <div class="light" id="6" ></div>
+    </section>
+    <section>
+        <button id="start">START</button>
+        <button id="stop">STOP</button>
+    </section>
+</section>
+<script src="lib/Jquary.js"> </script>
+<script>
+    const light_count = 6;//light gana
+    let current_light = -1;//dan paththu wen light ek
+    let direction = "RIGHT"  //RIGHT or LEFT(right side ekata ynw nm right,left side ekt yanw nm left)
+    let intervalID = null;
+    let audio = new Audio('Audio/WhatsApp Audio 2024-10-27 at 22.33.42.mpga');
+
+    updateLight = () =>{
+        if (direction === "RIGHT") {
+            current_light++;
+            $(".light").css("background", "white");
+            $(".light").eq(current_light - 1).css("background", "rosybrown");
+            $(".light").eq(current_light).css("background", "brown");
+
+            if (current_light == light_count-1){
+                direction = "LEFT";
+            }
+        }else {
+            current_light--;
+            $(".light").css("background", "white");
+            $(".light").eq(current_light + 1).css("background", "rosybrown");
+            $(".light").eq(current_light).css("background", "brown");
+
+            if (current_light == light_count-6){
+                direction = "RIGHT";
+            }
+        }
+    }
+
+
+
+    $("#start").on('click',function () {
+        audio.play();
+        audio.loop = true;
+        intervalID = setInterval(updateLight,150);
+    });
+    $("#stop").on('click',function () {
+        audio.pause();
+        clearInterval(intervalID);
+    });
+
+</script>
+</body>
+</html>

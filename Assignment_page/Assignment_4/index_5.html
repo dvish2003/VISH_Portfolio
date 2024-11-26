@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case_5</title>
+    <style>
+        main{
+            width: 50vw;
+            height: 50vh;
+            border: 3px solid black;
+            overflow: hidden;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+        }
+        section{
+            display: flex;
+            width: fit-content;
+            animation: animation-slide 5s infinite ;
+        }
+        section>div{
+            width: 50vw;
+            height: 50vh;
+        }
+        section>div:first-child{
+            background: url("assest/slide1.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+        section>div:nth-child(2){
+            background: url("assest/slide2.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+        section>div:nth-child(3){
+            background: url("assest/slide3.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+        section>div:nth-child(4){
+            background: url("assest/slide4.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        @keyframes animation-slide {
+            0%,20%{
+                transform: translateX(0%);
+            }
+            /*5% ka delay ekk thiynw.animation delay kiyana property eken wenne animation eka start karann 5s parakku krnwa habei mathana wenne key frame athara delay ekk hadanawa*/
+            25%,45%{
+                transform: translateX(-25%);
+            }
+            50%,55%{
+                transform: translateX(-50%);
+            }
+            75%{
+                transform: translateX(-75%);
+            }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <section>
+        <div id="1"></div>
+        <div id="2"></div>
+        <div id="3"></div>
+        <div id="4"></div>
+    </section>
+</main>
+</body>
+</html>

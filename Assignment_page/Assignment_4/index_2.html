@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case_2</title>
+</head>
+<style>
+    body{
+        background: black;
+    }
+
+    div{
+        width: 450px;
+        border-radius: 100%;
+        aspect-ratio: 1/1;
+        background: green;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    div:before{
+        content: "";
+        border: 10px solid white;
+
+           border-radius: 100%;
+
+        border-top-color: red;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    div:hover::before{
+        transform: rotate(720deg);
+        transition: 1s;
+    }
+    div>h1{
+        color: white;
+        width: max-content;
+        height: max-content;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+</style>
+<body>
+<div><h1>RWAD</h1></div>
+</body>
+</html>

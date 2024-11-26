@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+<section class="Background">
+    <div class="calculator">
+        <form>
+            <div class="display">
+                <input type="text" name="input" id="display">
+            </div>
+            <div>
+                <button id="AC" type="button" value="AC" onclick="input.value = ''">AC</button>
+                <button id="DE" type="button" value="DE" onclick="input.value = display.value.slice(0, -1)">DE</button>
+                <button id="." type="button" value="." onclick="input.value += '.'">.</button>
+                <button id="/" type="button" value="/" onclick="input.value += '/'">/</button>
+            </div>
+            <div>
+                <button id="7" type="button" value="7" onclick="input.value += '7'">7</button>
+                <button id="8" type="button" value="8" onclick="input.value += '8'">8</button>
+                <button id="9" type="button" value="9" onclick="input.value += '9'">9</button>
+                <button id="*" type="button" value="*" onclick="input.value += '*'">*</button>
+            </div>
+            <div>
+                <button id="4" type="button" value="4" onclick="input.value += '4'">4</button>
+                <button id="5" type="button" value="5" onclick="input.value += '5'">5</button>
+                <button id="6" type="button" value="6" onclick="input.value += '6'">6</button>
+                <button id="-" type="button" value="-" onclick="input.value += '-'">-</button>
+            </div>
+            <div>
+                <button id="1" type="button" value="1" onclick="input.value += '1'">1</button>
+                <button id="2" type="button" value="2" onclick="input.value += '2'">2</button>
+                <button id="3" type="button" value="3" onclick="input.value += '3'">3</button>
+                <button id="+" type="button" value="+" onclick="input.value += '+'">+</button>
+            </div>
+            <div>
+                <button id="00" type="button" value="00" onclick="document.value += '00'">00</button>
+                <button id="0" type="button" value="0" onclick="document.value += '0'">0</button>
+                <button id="equal" type="button" value="=" class="equal">=</button>
+            </div>
+        </form>
+    </div>
+</section>
+<script src="lib/jquery-3.7.1.min.js"></script>
+<script>
+   $("#equal").click(function () {
+           display.value = eval($("#display").val());
+   });
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

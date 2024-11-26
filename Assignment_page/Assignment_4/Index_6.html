@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case_6</title>
+</head>
+<style>
+  body{
+    width: 5000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000%;
+    background: url("assest/Car_Animation_Img/sky.jpg");
+    z-index: 1000;
+    overflow-y: hidden;
+    animation: background-animation 5s infinite;
+  }
+  .road{
+    background: url("assest/Car_Animation_Img/road.jpg");
+    width: 500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000%;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: anim_1 3000s infinite;
+  }
+  .city{
+    background: url("assest/Car_Animation_Img/city.png");
+    width: 50000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000%;
+    height: 250px;
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    animation: anim_1 3000s infinite;
+
+  }
+
+
+  #car>img {
+    width: 1000px;
+    height: auto;
+    position: absolute;
+    top: 400px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
+    #w2>img{
+      width: 200px;
+      position: absolute;
+      top: 685px;
+      left: 535px;
+      margin: auto;
+      animation: anim 30ms infinite;
+
+    }
+    #w1>img{
+      width: 200px;
+      position: absolute;
+      top: 685px;
+      left: 1150px;
+      margin: auto;
+      animation: anim 30ms infinite;
+    }
+    @keyframes anim {
+      from{
+        transform: rotate(360deg);
+      }
+    }
+  @keyframes anim_1 {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+</style>
+<body>
+
+<div class="road"></div>
+<div class="city"></div>
+<section class="car">
+  <div id="car">
+    <img src="assest/Car_Animation_Img/car.png">
+  </div>
+  <div id="w1">
+    <img src="assest/Car_Animation_Img/wheel.png">
+  </div>
+  <div id="w2">
+    <img src="assest/Car_Animation_Img/wheel.png">
+  </div>
+</section>
+
+</body>
+</html>
