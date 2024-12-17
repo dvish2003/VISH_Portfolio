@@ -75,13 +75,13 @@ html{
     gap: 2rem;
 }
 
-li > a {
+.nav_list li > a {
     color: black;
     position: relative;
     font-weight: 400;
 }
 
-li > a::before {
+.nav_list li > a::before {
     position: absolute;
     content: "";
     width: 0;
@@ -93,7 +93,7 @@ li > a::before {
     background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
 }
 
-li > a:hover::before {
+.nav_list li > a:hover::before {
     width: 100%
 }
 
@@ -1198,6 +1198,7 @@ li > a:hover::before {
     }
 }
 */
+/*
 .contact-section {
     display: flex;
     flex-direction: column;
@@ -1364,6 +1365,242 @@ button:hover {
         font-size: 0.85rem;
     }
 }
+*/
+.contact{
+    position: relative;
+    min-height: 6vh;
+    background: black;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.content{
+    max-width: 800px;
+    text-align: center;
+}
+
+.content>h1{
+    font-size: 3em;
+    color: white;
+    font-weight: 800;
+}
+
+.content>p{
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+.contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    cursor: pointer;
+}
+.icon{
+    position: relative;
+    min-width: 60px;
+    height: 60px;
+    background: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon::before{
+    content: " ";
+    position: absolute;
+    inset: 0;
+    background: gray;
+}
+.icon::after{
+    content: " ";
+    position: absolute;
+    inset: 2px;
+    background: black;
+}
+.icon>b{
+    position: absolute;
+    inset: 8px;
+    background: black;
+    z-index: 2;
+}
+.icon>i{
+    position: relative;
+    z-index: 900;
+    background: black;
+    font-size: 1.25em;
+}
+.text1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 300;
+}
+.text1>h3{
+    font-weight: 800;
+    color: gray;
+
+}
+.txt{
+    color: white;
+    margin-top: 50px;
+    font-weight: 500;
+    border-left: 50px solid gray;
+    padding-left: 10px;
+    line-height: 1em;
+}
+.sci{
+    position: relative;
+    display: flex;
+    gap: 30px;
+    margin: 20px 0;
+}
+.sci>li{
+    list-style: none;
+}
+.sci>li>a{
+    color: white;
+    font-size: 2.5rem;
+    transition: 0.25s;
+}
+
+
+.contactForm{
+    position: relative;
+    width: 40%;
+    background: repeating-conic-gradient(from var(--a),gray,transparent 10%,transparent 50%);
+    animation: animate 6s linear infinite;
+    padding: 60px;
+}
+.contactForm::before{
+    content: " ";
+    position: absolute;
+    inset: 0;
+    background: repeating-conic-gradient(from var(--a),gray 10%,transparent 10%,transparent 50%);
+    animation: animate 6s linear infinite;
+    animation-delay: -1.5s;
+}
+.contactForm::after{
+    content: "";
+    position: absolute;
+    inset: 2px;
+    border: 20px solid black;
+    background: #333;
+}
+.contactForm>form{
+    position: relative;
+    z-index: 10;
+}
+.contactForm>form>h2{
+    font-size: 2em;
+    color: white;
+    font-weight: 500;
+}
+.inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+.inputBox>input,.inputBox>textarea{
+    width: 100% !important;
+    padding: 5px 0;
+    font-size: 1.1em;
+    margin: 10px 0;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid gray;
+    color: white;
+    outline: none;
+    resize: none;
+}
+.inputBox>span{
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    padding: 5px 0;
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: white;
+    transition: 0.5s;
+}
+.inputBox>input:focus~span, .inputBox>textarea:focus~span,
+.inputBox>input:valid~span, .inputBox>textarea:valid~span{
+    color: white;
+    font-size: 0.9em;
+    transform: translateY(-24px);
+}
+.inputBox>input[type="submit"]{
+    width: 100%;
+    background: white;
+    color: #222;
+    border: none;
+    cursor: pointer;
+    padding: 10px ;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+@property --a {
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+@keyframes animate {
+    0%{
+        --a: 0deg;
+    }
+    100%{
+        --a: 360deg;
+    }
+}
+@media (max-width: 991px) {
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .contactInfo,.contactForm{
+        width: 100%;
+    }
+    .contactForm{
+        padding: 30px;
+    }
+    .contactForm>form{
+        padding: 30px;
+    }
+}
+@media (max-width: 375px) {
+    .contactForm{
+        width: 130%;
+    }
+    .contactForm form > h2{
+        font-size: 1em;
+        text-align: center;
+    }
+    .contactForm form > div >span{
+        font-size: 1em;
+    }
+    }
 
 /*=========================================================================================================================================================================================*/
 footer {
