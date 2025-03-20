@@ -164,7 +164,7 @@ html{
 }
 
 .about img {
-    border: 4px solid gray;
+    border: 1px solid gray;
     width: 31vw;
     height: auto;
     border-radius: 50%;
